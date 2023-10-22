@@ -1,0 +1,150 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="CloseAllApplications" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="In_Last_Browser2" Type="InArgument(ui:UiElement)" />
+    <x:Property Name="In_ACME_URL" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>824,1660.8</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>CloseAllApplications_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.ComponentModel</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="Do the necessary procedures for ending the process (e.g., logout) and close the used applications." DisplayName="Close All Applications" sap:VirtualizedContainerService.HintSize="545.6,1596" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log message (close applications)" sap:VirtualizedContainerService.HintSize="483.2,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Trace" Message="[&quot;Closing applications...&quot;]" />
+    <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="ACME_Url_Login" CacheStrategy="None" DisplayName="Get Asset" FolderPath="sumanthrao369@gmail.com's workspace" sap:VirtualizedContainerService.HintSize="483.2,143.2" sap2010:WorkflowViewState.IdRef="GetRobotAsset_1">
+      <ui:GetRobotAsset.Value>
+        <OutArgument x:TypeArguments="x:String">[In_ACME_URL]</OutArgument>
+      </ui:GetRobotAsset.Value>
+    </ui:GetRobotAsset>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="483.2,1074.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InUiElement="[In_Last_Browser2]" ScopeGuid="f5a243b7-8574-43bf-ad70-4cdef66756b8" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,937.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="387.2,82.4" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Url="[In_ACME_URL]" Version="V3" />
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Log Out'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f5a243b7-8574-43bf-ad70-4cdef66756b8" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://acme-test.uipath.com/home" CvTextArea="1583, 118, 64, 20" CvTextArgument="Log Out" CvType="Text" DesignTimeRectangle="1566, 96, 100, 63" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Log Out'" FullSelectorArgument="&lt;webctrl aaname='Log Out' parentid='bs-example-navbar-collapse-1' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Log Out' parentid='bs-example-navbar-collapse-1' tag='A' type='' class='' check:innerText='Log Out' /&gt;" Guid="63119a76-cb49-4217-b077-1e8b17deba25" InformativeScreenshot="a4dbe9d541ccbdcf268b0041a1bc0dcc.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1 - Dashboard' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CvTextArea="1383, 118, 163, 16" CvTextArgument="Switch to new theme" CvType="Text" DesignTimeRectangle="1367, 96, 199, 63" ElementType="Text" FriendlyName="'Switch to new theme'" FullSelectorArgument="&lt;webctrl aaname='Switch to new theme' parentid='bs-example-navbar-collapse-1' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Switch to new theme' parentid='bs-example-navbar-collapse-1' tag='A' type='' class='' check:innerText='Switch to new theme' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="387.2,144" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Logged out of ACME Website&quot;]" />
+            <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="387.2,134.4" sap2010:WorkflowViewState.IdRef="KillProcess_1" ProcessName="msedge.exe" />
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="387.2,144" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Closed edge process&quot;]" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
